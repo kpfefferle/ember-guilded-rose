@@ -1,53 +1,24 @@
 # Ember-guilded-rose
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+<h3>Welcome!</h3>
 
-## Prerequisites
+<p>
+  This is an Ember intepretation of the <a href="http://iamnotmyself.com/2011/02/13/refactor-this-the-gilded-rose-kata/">Guilded Rose Kata</a>
+  You're given a list of items on the screen, each with some special display logic.  You'll probably find some components that are doing
+  too little, and some that are doing too much.  
+</p>
 
-You will need the following things properly installed on your computer.
+<h4>Goals</h4>
+<p>
+    Refactor stuff! Try to balance eliminating duplication with readability and flexibility.
+    What if the sales team decides to add 5 new item types? What if users want to remove
+    items from the cart? Dream up some constraints and try them out.
+</p>
 
-* [Git](http://git-scm.com/)
-* [Node.js](http://nodejs.org/) (with NPM)
-* [Bower](http://bower.io/)
-* [Ember CLI](http://ember-cli.com/)
-* [PhantomJS](http://phantomjs.org/)
+<h4>Included Addons</h4>
 
-## Installation
-
-* `git clone <repository-url>` this repository
-* change into the new directory
-* `npm install`
-* `bower install`
-
-## Running / Development
-
-* `ember server`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
-
-### Code Generators
-
-Make use of the many generators for code, try `ember help generate` for more details
-
-### Running Tests
-
-* `ember test`
-* `ember test --server`
-
-### Building
-
-* `ember build` (development)
-* `ember build --environment production` (production)
-
-### Deploying
-
-Specify what it takes to deploy your app.
-
-## Further Reading / Useful Links
-
-* [ember.js](http://emberjs.com/)
-* [ember-cli](http://ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+<p>
+  This app has both <a href="https://github.com/jmurphyau/ember-truth-helpers">ember-truth-helpers</a> 
+  and <a href="https://github.com/DockYard/ember-composable-helpers">ember-composable-helpers</a> included to give you a range of helper choices.
+  </p>
 
