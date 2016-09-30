@@ -1,0 +1,8 @@
+.shelf-item {
+    border: 1px solid gray;
+    padding: 10px;
+}
+
+.shelf {
+    max-width: 500px;
+}
