@@ -11,7 +11,7 @@ export default Ember.Component.extend({
         if (this.get('item.name') === passName) {
             return 'Buy the Hand of Ragnaros first';
         } else {
-            return 'Not for sale'
+            return 'Not for sale';
         }
     }),
 
