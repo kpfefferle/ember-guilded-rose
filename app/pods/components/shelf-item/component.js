@@ -4,8 +4,9 @@ import itemHasOption from 'ember-guilded-rose/macros/item-has-option';
 export default Ember.Component.extend({
   classNames: ['shelf-item'],
 
-  hasSizeOption: itemHasOption('size'),
+  hasAgedOption: itemHasOption('aged'),
   hasColorOption: itemHasOption('color'),
-  hasStrengthOption: itemHasOption('strength'),
-  hasFlavorOption: itemHasOption('flavor')
+  hasFlavorOption: itemHasOption('flavor'),
+  hasSizeOption: itemHasOption('size'),
+  hasStrengthOption: itemHasOption('strength')
 });

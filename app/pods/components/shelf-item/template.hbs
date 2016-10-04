@@ -6,7 +6,7 @@
   {{#if hasColorOption}}
     <span>color: {{input value=item.options.color}}</span>
   {{/if}}
-  {{#if (eq item.name "Aged Brie")}}
+  {{#if hasAgedOption}}
     <span>aged: {{input type="checkbox" checked=item.options.aged}}</span>
     {{#if item.options.aged}}
       <span>age: {{input value=item.options.age}}years</span>
