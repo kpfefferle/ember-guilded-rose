@@ -1,0 +1,25 @@
+<h3>{{item.name}}</h3>
+<div class="shelf-item__body">
+  {{#if (eq item.name "+5 Dexterity Vest")}}
+    <span> size: {{input value=item.options.size}}</span>
+    <span> color: {{input value=item.options.color}}</span>
+  {{/if}}
+  {{#if (eq item.name "Aged Brie")}}
+    <span>aged: {{input type="checkbox" checked=item.options.aged}}</span>
+    {{#if item.options.aged}}
+      <span>age: {{input value=item.options.age}}years</span>
+    {{/if}}
+  {{/if}}
+  {{#if (eq item.name "Elixir of the Mongoose")}}
+    <span>strength: {{input value=item.options.strength}}</span>
+  {{/if}}
+  {{#if (eq item.name "Sulfuras, Hand of Ragnaros")}}
+    <span>size: {{input value=item.options.size}}</span>
+  {{/if}}
+  {{#if (eq item.name "Conjured Mana Cake")}}
+    <span>flavor: {{input value=item.options.flavor}}</span>
+  {{/if}}
+</div>
+<div class="shelf-item__buy-now">
+  {{buy-now item=item cartItems=cartItems action="buy"}}
+</div>
