@@ -3,7 +3,7 @@
 <h2>What's for sale?</h2>
 <div class="shelf">
   {{#each items as |item|}}
-    {{shelf-item item=item cartItems=cartItems}}
+    {{shelf-item item=item cartItems=cartItems buyAction=(action 'buy')}}
   {{/each}}
 </div>
 

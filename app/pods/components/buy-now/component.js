@@ -23,6 +23,6 @@ export default Ember.Component.extend({
     }),
 
     click() {
-        this.sendAction('action', this.get('item'));
+      this.attrs.buyAction(this.get('item'));
     }
 });
