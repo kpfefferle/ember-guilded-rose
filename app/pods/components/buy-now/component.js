@@ -9,20 +9,17 @@ export default Ember.Component.extend({
     buyMessage: 'Buy Now!',
 
     cantBuy: Ember.computed.not('canBuy'),
+    isPass: Ember.computed.equal('item.name', passName),
 
-    canBuy: Ember.computed('item.name', 'cartItems.@each.name', function () {
-      if (this.get('item.name') === passName) {
+    canBuy: Ember.computed('isPass', 'cartItems.@each.name', function () {
+      if (this.get('isPass')) {
           return this.get('cartItems').isAny('name', 'Sulfuras, Hand of Ragnaros');
       } else {
           return true;
       }
     }),
-    cantBuyMessage: Ember.computed('item.name', function () {
-      if (this.get('item.name') === passName) {
-          return 'Buy the Hand of Ragnaros first';
-      } else {
-          return 'Not for sale';
-      }
+    cantBuyMessage: Ember.computed('isPass', function () {
+      return this.get('isPass') ? 'Buy the Hand of Ragnaros first' : 'Not for sale';
     }),
 
     click() {
